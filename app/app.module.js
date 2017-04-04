@@ -14,6 +14,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var bug_module_1 = require('./bugs/bug.module');
 var shared_module_1 = require('./shared/shared.module');
 var app_routing_module_1 = require('./app-routing.module');
+var core_module_1 = require('./core/core.module');
 // Component
 var app_component_1 = require('./app.component');
 var navbar_component_1 = require('./navbar/navbar.component');
@@ -26,7 +27,8 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 bug_module_1.BugModule,
                 shared_module_1.SharedModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                core_module_1.CoreModule.forRoot() // forRoot() only allows for use in root app
             ],
             declarations: [
                 app_component_1.AppComponent,
