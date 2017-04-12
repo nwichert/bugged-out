@@ -21,7 +21,8 @@ var BugService = (function () {
         var _this = this;
         return Observable_1.Observable.create(function (obs) {
             _this.bugsDbRef.on('child_added', function (bug) {
-                obs.next(bug.val());
+                var newBug = bug.val(); // .val() creates a javascript object
+                obs.next(newBug);
             }, function (err) {
                 obs.throw(err);
             });
