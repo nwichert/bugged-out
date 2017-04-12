@@ -1,1 +1,1 @@
-# angular2-skeleton
+# Devslopes Bugged Out Course | Udemy.com
